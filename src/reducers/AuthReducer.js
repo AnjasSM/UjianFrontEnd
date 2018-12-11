@@ -3,10 +3,11 @@ import {
     AUTH_SYSTEM_ERROR, 
     AUTH_LOADING,
     LOGOUT,
-    COOKIE_CHECKED
+    COOKIE_CHECKED,
+    PLUS_CART
 } from '../actions/types';
 
-const INITIAL_STATE = { username: '', email: '', error: '', loading: false, cookie: false };
+const INITIAL_STATE = { username: '', user_id: 0, email: '', error: '', loading: false, cookie: false, jumlahCart: 0 };
 
 export default (state = INITIAL_STATE, action) => {
     switch(action.type) {
@@ -17,9 +18,11 @@ export default (state = INITIAL_STATE, action) => {
         case AUTH_LOADING :
             return { ...state, loading: true }
         case LOGOUT :
-            return { ...INITIAL_STATE, cookie: true };
+            return { ...INITIAL_STATE, cookie: true }
         case COOKIE_CHECKED :
             return { ...INITIAL_STATE, cookie: true }
+        case PLUS_CART: 
+            return{...state , jumlahCart : action.payload}  
         default :
             return state;
     }

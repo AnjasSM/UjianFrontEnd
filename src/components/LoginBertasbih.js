@@ -29,7 +29,8 @@ class LoginBertasbih extends Component {
 
     renderButton = () => {
         if(this.props.loading) {
-            return <i className="fa fa-spinner fa-spin" style={{ fontSize: '54px' }}/>
+            // return <i className="fa fa-spinner fa-spin" style={{ fontSize: '54px' }}/>
+            return
         }
         return <Button color="success"
                     onClick={this.onBtnLoginClick}>
@@ -65,7 +66,8 @@ const mapStateToProps = (state) => {
     return { 
         username: state.auth.username, 
         error: state.auth.error, 
-        loading: state.auth.loading
+        loading: state.auth.loading,
+        id : state.auth.user_id
     };
 }
 

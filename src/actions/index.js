@@ -5,7 +5,8 @@ import {
     AUTH_LOADING,
     LOGOUT,
     COOKIE_CHECKED,
-    SELECT_POPOK
+    SELECT_POPOK,
+    PLUS_CART
 } from './types';
 
 export const onUserRegister = ({ username, email, phone, password }) => {
@@ -103,5 +104,11 @@ export const select_popok = (selectedPopok) => {
     return { 
         type: SELECT_POPOK,
         payload: selectedPopok
+    }
+}
+
+export const tambahCart = () => { 
+    return{ 
+        type: PLUS_CART
     }
 }

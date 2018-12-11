@@ -14,6 +14,7 @@ import {
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Cookies from 'universal-cookie';
+import axios from 'axios';
 import { onUserLogout, keepLogin } from '../actions';
 
 const cookies = new Cookies();
@@ -37,6 +38,17 @@ class HeaderBertasbih extends Component {
         this.props.onUserLogout();
         cookies.remove('Ferguso');
     }
+
+    getApiCart = () => {
+        axios.get('http://localhost:2000/cart', {
+          params : {
+            username : this.props.username
+          }
+        }).then((res) => {
+          console.log(res.data.length) 
+          this.setState({jumlah : res.data.length})
+        })
+      }
 
     render() {
         if(this.props.username === "") {

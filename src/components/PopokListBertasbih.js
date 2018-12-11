@@ -67,8 +67,8 @@ class PopokListBertasbih extends Component {
                         <div className="container-fluid">
                             <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="section-heading text-uppercase">List Popok</h2>
-                                <h3 className="section-subheading text-muted">Best popok in town.</h3>
+                                <h2 className="section-heading text-uppercase">Iceland in Action</h2>
+                                <h3 className="section-subheading text-muted">Need Ice? Come to IceLand</h3>
                             </div>
                             </div>
                             <div className="row">
