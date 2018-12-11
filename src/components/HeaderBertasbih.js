@@ -71,7 +71,7 @@ class HeaderBertasbih extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="/popoklist">Browse Popok</NavLink>
+                            <NavLink href="/popoklist">Browse Ice Cream</NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
@@ -79,10 +79,12 @@ class HeaderBertasbih extends Component {
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
-                                    <Link to="/managepopok">Manage Popok</Link>
+                                    <Link to="/managepopok">Manage Ice Cream</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Option 2
+                                    <Link to="/cart">Cart</Link>
+                                </DropdownItem><DropdownItem>
+                                    <Link to="/history">History</Link>
                                 </DropdownItem>
                                 <DropdownItem divider />
                                 <DropdownItem onClick={this.onLogOutSelect}>

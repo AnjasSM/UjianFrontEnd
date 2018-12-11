@@ -19,6 +19,7 @@ class HomeBertasbih extends Component {
             return (
                 <div>
                     <h3>{item.nama}</h3>
+                    <img src={item.img} />
                     <p>{item.description}</p>
                 </div>
             )
@@ -30,9 +31,9 @@ class HomeBertasbih extends Component {
         console.log(this.state.listPopok)
         return(
             <div>
-                <h1>Ini Home</h1>
+                <center><h1>Enjoy Your IceTime</h1></center>
                 {this.renderListPopok()}
-                <h2>{this.props.pikachu}</h2>
+                {/* <h2>{this.props.pikachu}</h2> */}
             </div>
         );
     }

@@ -4,7 +4,7 @@ class FooterBertasbih extends Component {
     render() {
         return (
             <div>
-                <h1>Ini Footer</h1>
+                <h1></h1>
             </div>
         )
     }

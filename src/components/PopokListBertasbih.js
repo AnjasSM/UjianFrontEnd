@@ -77,9 +77,9 @@ class PopokListBertasbih extends Component {
                                         <input type="text" className="form-input" ref="searchNama" placeholder="Nama Popok" />
                                         <select ref="searchMerk">
                                             <option value="">All Merk</option>
-                                            <option>Bronson</option>
-                                            <option>Bunting</option>
-                                            <option>Uchiha</option>
+                                            <option>Greater's</option>
+                                            <option>Campiun</option>
+                                            <option>Woles</option>
                                         </select>
                                         Harga : <input type="number" ref="hargaMinSearch" defaultValue="0" /> - <input type="number" ref="hargaMaxSearch" defaultValue="9999999" />
                                         <input type="button" className="btn btn-success" value="Search" onClick={this.onBtnSearchClick} />

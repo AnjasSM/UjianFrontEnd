@@ -88,9 +88,9 @@ class ManagePopokBertasbih extends Component {
                     </td>
                     <td>
                         <select ref="merkEdit" defaultValue={merk}>
-                            <option>Bronson</option>
-                            <option>Uchiha</option>
-                            <option>Bunting</option>
+                            <option>Greater's</option>
+                            <option>Campiun</option>
+                            <option>Woles</option>
                         </select>
                     </td>
                     <td>
@@ -126,7 +126,7 @@ class ManagePopokBertasbih extends Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12 text-center">
-                        <h2 className="section-heading text-uppercase">Manage Popok</h2>
+                        <h2 className="section-heading text-uppercase">Manage Ice Cream</h2>
                     </div>
                 </div>
                 <center>
@@ -154,9 +154,9 @@ class ManagePopokBertasbih extends Component {
                                 </td>
                                 <td>
                                     <select ref="merkAdd">
-                                        <option>Bronson</option>
-                                        <option>Uchiha</option>
-                                        <option>Bunting</option>
+                                    <option>Greater's</option>
+                                    <option>Campiun</option>
+                                    <option>Woles</option>
                                     </select>
                                 </td>
                                 <td>
