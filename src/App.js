@@ -35,7 +35,7 @@ class App extends Component {
     if (this.props.cookie) {
       return (
         <div>
-          <HeaderBertasbih navBrand={"Kacrut"} />
+          <HeaderBertasbih navBrand={"PopokinLand"} />
           <div>
             <Route exact path="/" component={HomeBertasbih} />
             <Route path="/login" component={LoginBertasbih} />
