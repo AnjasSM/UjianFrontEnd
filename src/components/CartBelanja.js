@@ -65,7 +65,7 @@ class Cart extends React.Component {
         return(
             <div className='col-2'>
                 <h3>{a}</h3>
-                    <Input className="btn-primary" type='button' value='CHECKOUT' onClick ={this.onCheckOut}/>
+                    <Input className="btn btn-success" type='button' value='CHECKOUT' onClick ={this.onCheckOut}/>
             </div>
         )
     }
